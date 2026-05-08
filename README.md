@@ -322,22 +322,3 @@ php artisan tinker
 # 3. Ejecuta migraciones
 ```
 
----
-
-## 🤝 Contribuir
-
-Las contribuciones son bienvenidas. Para cambios mayores:
-
-1. Fork el repositorio
-2. Crea una rama (`git checkout -b feature/mi-feature`)
-3. Commit cambios (`git commit -am 'Agregar feature'`)
-4. Push a la rama (`git push origin feature/mi-feature`)
-5. Abre un Pull Request
-
----
-
-## 📄 Licencia
-
-Este proyecto está bajo la licencia **MIT**. Ver archivo `LICENSE` para más detalles.
-
----

@@ -28,9 +28,6 @@
 - [Módulos CRM](#-módulos-crm)
 - [Tech Stack](#-tech-stack)
 - [Deployment](#-deployment)
-- [Contribuir](#-contribuir)
-- [Licencia](#-licencia)
-
 ---
 
 ## Descripción

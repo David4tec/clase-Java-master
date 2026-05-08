@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================================================
+   KITTFILL — Brand CSS
+   ================================================ */
+
+@layer base {
+    :root {
+        --kf-bg:          #c9d1ea;
+        --kf-nav-from:    #0f2460;
+        --kf-nav-to:      #1d4ed8;
+        --kf-blue:        #2563eb;
+        --kf-dark:        #0f172a;
+        --kf-footer-bar:  #b8c2dc;
+    }
+
+    body {
+        background-color: var(--kf-bg);
+        font-family: 'Figtree', ui-sans-serif, system-ui, sans-serif;
+    }
+
+    [x-cloak] { display: none !important; }
+}
+
+@layer components {
+
+    /* ── Navigation ── */
+    .kf-nav {
+        background: linear-gradient(90deg, var(--kf-nav-from) 0%, var(--kf-nav-to) 100%);
+        box-shadow: 0 2px 12px rgba(15, 36, 96, 0.35);
+    }
+
+    /* ── Logo (outlined / hollow style) ── */
+    .kf-logo {
+        @apply no-underline select-none tracking-widest uppercase font-black text-2xl;
+        font-family: 'Arial Black', 'Impact', 'Figtree', sans-serif;
+        letter-spacing: 4px;
+        /* Outlined hollow effect */
+        color: transparent;
+        -webkit-text-stroke: 2px rgba(255, 255, 255, 0.95);
+        paint-order: stroke fill;
+    }
+
+    .kf-logo:hover {
+        -webkit-text-stroke-color: rgba(255, 255, 255, 1);
+    }
+
+    /* Alias kept for guest layout */
+    .kf-logo-thin {
+        font-weight: 900;
+    }
+
+    .kf-nav-link {
+        @apply text-white/80 hover:text-white text-sm font-medium transition-colors duration-200 no-underline;
+    }
+
+    .kf-icon-btn {
+        @apply text-white/80 hover:text-white transition-colors duration-200 cursor-pointer bg-transparent border-0 p-0;
+    }
+
+    /* ── Buttons ── */
+    .kf-btn {
+        @apply inline-flex items-center justify-center bg-blue-600 text-white font-semibold
+               py-2.5 px-6 rounded-lg hover:bg-blue-700 active:bg-blue-800
+               transition-colors duration-200 cursor-pointer border-0
+               focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+    }
+
+    .kf-btn-outline {
+        @apply inline-flex items-center justify-center bg-transparent text-blue-600 font-semibold
+               py-2.5 px-6 rounded-lg border-2 border-blue-600 hover:bg-blue-50
+               transition-colors duration-200 cursor-pointer
+               focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+    }
+
+    .kf-btn-sm {
+        @apply py-1.5 px-4 text-sm rounded;
+    }
+
+    /* ── Product Cards ── */
+    .kf-product-card {
+        @apply bg-white rounded-2xl shadow-sm overflow-hidden cursor-pointer
+               hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200;
+    }
+
+    .kf-product-img {
+        @apply w-full object-cover;
+        background-color: #dce3f5;
+        min-height: 160px;
+    }
+
+    .kf-product-img-circle {
+        @apply rounded-full overflow-hidden mx-auto bg-[#dce3f5] flex items-center justify-center;
+    }
+
+    /* ── Section Headings ── */
+    .kf-section-title {
+        @apply text-center text-sm font-bold tracking-[0.25em] uppercase text-gray-800;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+
+    /* ── Form Inputs ── */
+    .kf-input {
+        @apply w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-800
+               placeholder-gray-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500
+               focus:outline-none transition-colors duration-150;
+    }
+
+    /* ── Cards / Panels ── */
+    .kf-card {
+        @apply bg-white rounded-2xl shadow-sm p-6;
+    }
+
+    /* ── Hero ── */
+    .kf-hero-section {
+        background-color: var(--kf-bg);
+        position: relative;
+    }
+
+    /* ── Cart item ── */
+    .kf-cart-item {
+        @apply flex items-start gap-4 bg-white/60 rounded-xl p-4 mb-3;
+    }
+
+    /* ── Quantity stepper ── */
+    .kf-qty-btn {
+        @apply w-7 h-7 rounded flex items-center justify-center text-gray-600
+               hover:bg-gray-200 transition-colors text-lg font-medium select-none cursor-pointer;
+        background-color: #d4dbed;
+    }
+
+    /* ── Breadcrumb ── */
+    .kf-breadcrumb {
+        @apply text-xs text-gray-500 tracking-widest uppercase;
+    }
+
+    /* ── Summary Box ── */
+    .kf-summary-row {
+        @apply flex items-center justify-between text-sm py-1.5;
+    }
+
+    .kf-summary-total {
+        @apply flex items-center justify-between font-bold text-base pt-3 border-t border-gray-200 mt-2;
+    }
+}

@@ -15,21 +15,6 @@
 
 ---
 
-## 📋 Tabla de Contenidos
-
-- [Descripción](#descripción)
-- [Características](#-características)
-- [Requisitos](#-requisitos)
-- [Instalación](#-instalación)
-- [Configuración](#-configuración)
-- [Uso](#-uso)
-- [Estructura de Rutas](#-rutas)
-- [Sistema de Roles](#-sistema-de-roles)
-- [Módulos CRM](#-módulos-crm)
-- [Tech Stack](#-tech-stack)
-- [Deployment](#-deployment)
----
-
 ## Descripción
 
 **Kittpill** es una aplicación Laravel 12 que combina una **tienda de e-commerce pública** con un **panel CRM administrativo completo**. Permite a los administradores gestionar contactos, ventas y actividades comerciales, mientras que los clientes tienen acceso a una tienda de productos y gestión de perfil.

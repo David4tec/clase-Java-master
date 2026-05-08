@@ -341,9 +341,3 @@ Las contribuciones son bienvenidas. Para cambios mayores:
 Este proyecto está bajo la licencia **MIT**. Ver archivo `LICENSE` para más detalles.
 
 ---
-
-<div align="center">
-
-**Hecho con ❤️ por [David Gonzalez](https://github.com/David4tec)**
-
-</div>
